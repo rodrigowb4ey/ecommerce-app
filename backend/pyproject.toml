@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ecommerce-api"
+version = "0.1.0"
+description = "Ecommerce API"
+authors = ["Rodrigo Saraiva <rodrigobezerrasaraiva@gmail.com>"]
+license = "GNU GENERAL PUBLIC LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.6"
+djangorestframework = "^3.14.0"
+psycopg2-binary = "^2.9.5"
+django-filter = "^22.1"
+
+[tool.poetry.group.dev.dependencies]
+django-extensions = "^3.2.1"
+factory-boy = "^3.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
