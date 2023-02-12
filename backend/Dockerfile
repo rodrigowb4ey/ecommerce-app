@@ -25,9 +25,9 @@ COPY --from=build /app /app
 WORKDIR /app
 
 # Expose the default Django port
-EXPOSE 8000
+EXPOSE 8080
 
-RUN chmod -R 765 /app/entrypoint.sh
+RUN chmod -R a+rwx /app/entrypoint.sh
 
 # Start the Django development server
 ENTRYPOINT ["/app/entrypoint.sh"]
